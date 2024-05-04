@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <div class="overlay">
+        <!-- TTT=Tic Tac Toe -->
+        <section class="TTT">
+          <div class="row1">
+            <div class="gameBox">
+              <button class="boxBtn box1">1</button>
+            </div>
+            <div class="gameBox">
+              <button class="boxBtn box2">2</button>
+            </div>
+            <div class="gameBox">
+              <button class="boxBtn box3">3</button>
+            </div>
+          </div>
+          <div class="row2">
+            <div class="gameBox">
+              <button class="boxBtn box4">4</button>
+            </div>
+            <div class="gameBox">
+              <button class="boxBtn box5">5</button>
+            </div>
+            <div class="gameBox">
+              <button class="boxBtn box6">6</button>
+            </div>
+          </div>
+          <div class="row3">
+            <div class="gameBox">
+              <button class="boxBtn box7">7</button>
+            </div>
+            <div class="gameBox">
+              <button class="boxBtn box8">8</button>
+            </div>
+            <div class="gameBox">
+              <button class="boxBtn box9">9</button>
+            </div>
+          </div>
+        </section>
+        <section class="gameTxt">
+          <div class="gameWonMsg"><h1 class="winMsg">You won!</h1></div>
+          <div class="gameStartMsg">
+            <button>
+              <h1 class="startMsg">Start Playing Tic Tac Toe!</h1>
+            </button>
+          </div>
+
+          <div class="gameStartMsg replayTxt">
+            <button><h1 class="startMsg replayMsg">Play Again!</h1></button>
+          </div>
+          <div class="gameStartMsg replayTxt">
+            <button>
+              <h1 class="startMsg drawMsg">It`s a DRAW! Click to replay</h1>
+            </button>
+          </div>
+        </section>
+      </div>
+      <div class="leftSide">
+        <div><h1 class="turn0">O`S TURN</h1></div>
+        <div><h1 class="leftTimeOut">TIME IS OUT! X WON</h1></div>
+        <div><h1 class="leftTimer">00:00:00</h1></div>
+      </div>
+
+      <div class="rightSide">
+        <div><h1 class="turn1">X`S TURN</h1></div>
+        <div><h1 class="rightTimeOut">TIME IS OUT! O WON</h1></div>
+        <div><h1 class="rightTimer">00:00:00</h1></div>
+      </div>
+    </div>
+
+    <script src="scirpt.js"></script>
+  </body>
+</html>

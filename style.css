@@ -1,0 +1,144 @@
+.screen {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.leftSide,
+.leftSide,
+.rightSide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+}
+
+.leftSide {
+  left: 0;
+  background: rgb(255, 255, 255);
+}
+
+.turn0,
+.turn1 {
+  display: flex;
+  font-size: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftTimer,
+.rightTimer {
+  font-size: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.leftTimeOut,
+.rightTimeOut {
+  font-size: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightSide {
+  right: 0;
+  background: rgb(255, 255, 255);
+}
+
+.center {
+  flex: 2; /* The center section will take twice as much space as the left and right sections */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TTT {
+  background-color: aqua;
+  width: 367px;
+  height: 355px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* To place it above the leftSide and rightSide */
+}
+
+.boxBtn {
+  font-size: 125.1111111px;
+  margin: 5px 20px;
+  border-radius: 5%;
+  height: 90px;
+
+  /* Make the numbers invisible */
+  color: transparent;
+}
+
+/* Makes them side by side */
+.row1,
+.row2,
+.row3 {
+  display: flex;
+}
+
+.gameStartMsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.gameStartMsg button {
+  background-color: transparent;
+  border: none;
+}
+
+.startMsg {
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  z-index: 999;
+}
+
+.drawMsg {
+  z-index: 1;
+  margin-top: 75%;
+}
+
+.startMsg:hover {
+  scale: 1.5;
+}
+.winMsg {
+  font-size: 150px;
+  color: rgb(0, 0, 0);
+}
+.gameWonMsg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.replayTxt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.boxBtn.blue {
+  background-image: url("circle.png");
+  background-repeat: no-repeat;
+  background-size: contain; /* adjust as needed */
+}
+.boxBtn.red {
+  background-image: url("x.png");
+  background-repeat: no-repeat;
+  background-size: contain; /* adjust as needed */
+}
